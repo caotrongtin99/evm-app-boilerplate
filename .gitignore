@@ -2,11 +2,13 @@
 
 # Dependencies
 node_modules
+/.pnp
 .pnp
 .pnp.js
 
 # Local env files
 .env
+.env*.local
 .env.local
 .env.development.local
 .env.test.local
@@ -14,6 +16,18 @@ node_modules
 
 # Testing
 coverage
+/coverage
+
+# Next.js
+/.next/
+/out/
+.next/
+out/
+
+# Production builds
+/build
+build
+dist
 
 # Turbo
 .turbo
@@ -21,16 +35,15 @@ coverage
 # Vercel
 .vercel
 
-# Build Outputs
-.next/
-out/
-build
-dist
-
-
 # Debug
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Misc
 .DS_Store
 *.pem
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
