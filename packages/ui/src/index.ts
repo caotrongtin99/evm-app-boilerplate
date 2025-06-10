@@ -1,5 +1,5 @@
 // Components
-export * from "./components/index.js";
+export * from "./components";
 
 // Utilities
-export { cn } from "./lib/utils.js";
+export { cn } from "./lib/utils";

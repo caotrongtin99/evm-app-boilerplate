@@ -1,5 +1,5 @@
 import { formatEther, formatUnits, parseEther, parseUnits } from "viem";
-import type { WalletAddress } from "../types/index.js";
+import type { WalletAddress } from "../types/index.ts";
 
 /**
  * Format wallet address for display

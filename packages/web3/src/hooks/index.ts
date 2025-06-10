@@ -1,2 +1,2 @@
-export { useWalletInfo } from "./useWalletInfo.js";
-export { useContractWrite } from "./useContractWrite.js";
+export { useWalletInfo } from "./useWalletInfo.ts";
+export { useContractWrite } from "./useContractWrite.ts";

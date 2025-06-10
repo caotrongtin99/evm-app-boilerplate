@@ -1,10 +1,6 @@
 import { useState, useCallback } from "react";
 import { useWriteContract, useWaitForTransactionReceipt } from "wagmi";
-import type {
-  ContractAddress,
-  TransactionHash,
-  ContractABI,
-} from "../types/index.js";
+import type { ContractAddress, TransactionHash, ContractABI } from "../types";
 
 interface UseContractWriteProps {
   address: ContractAddress;

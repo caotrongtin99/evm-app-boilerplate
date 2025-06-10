@@ -1,14 +1,14 @@
 // Config
-export * from "./config/index.js";
+export * from "./config";
 
 // Types
-export * from "./types/index.js";
+export * from "./types";
 
 // Utils
-export * from "./utils/index.js";
+export * from "./utils";
 
 // Hooks
-export * from "./hooks/index.js";
+export * from "./hooks";
 
 // ABI
-export * from "./abi/index.js";
+export * from "./abi";

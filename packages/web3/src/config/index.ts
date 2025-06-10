@@ -1,2 +1,2 @@
-export * from "./chains.js";
-export * from "./wagmi.js";
+export * from "./chains.ts";
+export * from "./wagmi.ts";

@@ -1,5 +1,5 @@
 import { getDefaultConfig } from "@rainbow-me/rainbowkit";
-import { supportedChains } from "./chains.js";
+import { supportedChains } from "./chains";
 
 // Get app info from environment variables
 const getAppInfo = () => ({

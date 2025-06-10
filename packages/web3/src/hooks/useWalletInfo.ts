@@ -1,6 +1,6 @@
 import { useAccount, useBalance, useChainId, useDisconnect } from "wagmi";
-import { formatAddress, formatBalance } from "../utils/format.js";
-import type { WalletState } from "../types/index.js";
+import { formatAddress, formatBalance } from "../utils";
+import type { WalletState } from "../types";
 
 /**
  * Hook to get detailed wallet information and connection status

@@ -1,2 +1,2 @@
-export { Button, buttonVariants } from "./button.js";
-export { Input, inputVariants, type InputProps } from "./input.js";
+export { Button, buttonVariants } from "./button.tsx";
+export { Input, inputVariants, type InputProps } from "./input.tsx";
