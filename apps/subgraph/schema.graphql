@@ -1,0 +1,15 @@
+type ExampleEntity @entity {
+  id: ID!
+  address: Bytes!
+  value: BigInt!
+  timestamp: BigInt!
+  blockNumber: BigInt!
+  contract: ExampleContract!
+}
+
+type ExampleContract @entity {
+  id: ID!
+  totalEvents: BigInt!
+  lastEventTimestamp: BigInt!
+  events: [ExampleEntity!]! @derivedFrom(field: "contract")
+} 

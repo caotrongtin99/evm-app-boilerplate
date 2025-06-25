@@ -1,0 +1,24 @@
+{
+  "name": "@evm-dapp-boilerplate/subgraph",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/",
+    "create-local": "graph create --node http://localhost:8020/",
+    "remove-local": "graph remove --node http://localhost:8020/",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.68.0",
+    "@graphprotocol/graph-ts": "^0.31.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  }
+} 
