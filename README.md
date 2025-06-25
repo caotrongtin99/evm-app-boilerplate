@@ -10,6 +10,7 @@ This monorepo contains:
 - **Backend** (`apps/api`): NestJS API with blockchain interaction capabilities
 - **UI Package** (`packages/ui`): Shared shadcn/ui components
 - **Web3 Package** (`packages/web3`): Shared Web3 utilities and hooks
+- **IPFS Package** (`packages/ipfs`): IPFS integration with React hooks and utilities
 
 ## ⚡ Quick Start
 
@@ -49,6 +50,7 @@ pnpm dev --filter=api    # Backend only
 - **Frontend**: http://localhost:3000
 - **Backend API**: http://localhost:3001
 - **API Documentation**: http://localhost:3001/api/docs
+- **IPFS Demo**: http://localhost:3000/demo/ipfs-complete
 
 ## 🔧 Tech Stack
 
@@ -60,6 +62,7 @@ pnpm dev --filter=api    # Backend only
 - **shadcn/ui** components
 - **RainbowKit** for wallet connections
 - **Wagmi** for Ethereum interactions
+- **IPFS** integration for decentralized storage
 
 ### Backend
 - **NestJS** framework
@@ -71,6 +74,7 @@ pnpm dev --filter=api    # Backend only
 ### Shared Packages
 - **@workspace/ui**: Reusable UI components
 - **@workspace/web3**: Web3 utilities and hooks
+- **@workspace/ipfs**: IPFS utilities, hooks, and components
 - **@workspace/eslint-config**: Shared ESLint configuration
 - **@workspace/typescript-config**: Shared TypeScript configuration
 
@@ -83,15 +87,35 @@ pnpm dev --filter=api    # Backend only
 - Smart contract interactions
 - Testnet support
 
+## 🌍 IPFS Features
+
+- **File Upload**: Upload any file type to IPFS
+- **Content Retrieval**: Retrieve and display content from IPFS hashes
+- **NFT Metadata**: Create and upload OpenSea-compatible NFT metadata
+- **Pin Management**: Pin/unpin content for persistent storage
+- **React Hooks**: Easy-to-use hooks for IPFS operations
+- **UI Components**: Pre-built components for file uploading and content display
+- **Multiple Providers**: Support for different IPFS providers and gateways
+
 ## 📁 Project Structure
 
 ```
 ├── apps/
 │   ├── web/                 # Next.js frontend
+│   │   ├── components/
+│   │   │   └── ipfs/        # IPFS-specific components
+│   │   └── src/app/demo/
+│   │       └── ipfs-complete/ # Complete IPFS demo
 │   └── api/                 # NestJS backend
 ├── packages/
 │   ├── ui/                  # shadcn/ui components
 │   ├── web3/                # Web3 utilities
+│   ├── ipfs/                # IPFS utilities and hooks
+│   │   ├── src/
+│   │   │   ├── hooks/       # React hooks for IPFS
+│   │   │   ├── utils/       # IPFS utility functions
+│   │   │   ├── components/  # Reusable IPFS components
+│   │   │   └── types/       # TypeScript type definitions
 │   ├── eslint-config/       # ESLint configs
 │   └── typescript-config/   # TypeScript configs
 └── ...config files
@@ -146,6 +170,8 @@ Key variables:
 - `NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID`: WalletConnect project ID
 - `PORT`: API server port (default: 3001)
 - `CORS_ORIGIN`: Allowed origins for CORS
+- `NEXT_PUBLIC_IPFS_GATEWAY`: IPFS gateway URL (optional, defaults to ipfs.io)
+- `IPFS_API_URL`: IPFS API endpoint (optional, for advanced IPFS operations)
 
 ## 🤝 Contributing
 
