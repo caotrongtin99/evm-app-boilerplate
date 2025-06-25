@@ -2,8 +2,12 @@
   "name": "@workspace/typescript-config",
   "version": "0.0.0",
   "private": true,
-  "license": "PROPRIETARY",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "exports": {
+    "./base.json": "./base.json",
+    "./react.json": "./react.json"
   }
 }

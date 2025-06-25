@@ -1,0 +1,39 @@
+{
+  "name": "@workspace/ipfs",
+  "version": "0.1.0",
+  "description": "IPFS utilities and hooks for Web3 DApp",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ipfs-http-client": "^60.0.1",
+    "kubo-rpc-client": "^3.0.2",
+    "@helia/unixfs": "^3.0.0",
+    "@helia/json": "^3.0.0",
+    "@helia/strings": "^3.0.0",
+    "helia": "^4.0.0",
+    "multiformats": "^13.0.0",
+    "@multiformats/multiaddr": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  }
+} 
