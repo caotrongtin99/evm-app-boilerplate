@@ -48,7 +48,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* IPFS Demo */}
-          <Link href="/demo/ipfs-complete" className="group">
+          <Link href="/ipfs" className="group">
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200 group-hover:scale-105">
               <div className="flex items-center mb-4">
                 <div className="bg-gradient-to-br from-purple-500 to-pink-500 p-3 rounded-xl text-white mr-4">
