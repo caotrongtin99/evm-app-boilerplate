@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Kiểm tra format của commit message
+commit_regex='^(feat|fix|docs|style|refactor|test|chore)(\(.+\))?: .{1,50}'
+
+if ! grep -qE "$commit_regex" "$1"; then
+    echo "❌ Commit message không đúng format!"
+    echo "📝 Sử dụng format: type(scope): description"
+    echo "📋 Types: feat, fix, docs, style, refactor, test, chore"
+    echo "💡 Ví dụ: feat(auth): add login functionality"
+    exit 1
+fi 
