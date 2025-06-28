@@ -1,0 +1,50 @@
+{
+  "recommendations": [
+    // Essential formatting and linting
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+
+    // TypeScript and JavaScript
+    "ms-vscode.vscode-typescript-next",
+    "bradlc.vscode-tailwindcss",
+
+    // React and Next.js
+    "ms-vscode.vscode-react-preview",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+
+    // Git tools
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+
+    // Web3 and Solidity (for EVM development)
+    "juanblanco.solidity",
+    "nomic-foundation.hardhat-solidity",
+
+    // General productivity
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-markdown",
+    "yzhang.markdown-all-in-one",
+
+    // Theme and UI
+    "pkief.material-icon-theme",
+    "github.github-vscode-theme",
+
+    // Package management
+    "arcanis.vscode-zipfs",
+
+    // Code quality
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+
+    // Productivity
+    "ms-vscode.vscode-thunder-client",
+    "rangav.vscode-thunder-client"
+  ],
+  "unwantedRecommendations": [
+    "ms-vscode.vscode-typescript",
+    "hookyqr.beautify",
+    "ms-vscode.vscode-css"
+  ]
+}
