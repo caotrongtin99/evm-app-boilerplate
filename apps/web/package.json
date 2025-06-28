@@ -7,11 +7,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --max-warnings=0",
     "lint:fix": "next lint --fix",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.80.3",
     "@workspace/ui": "workspace:*",
     "@workspace/web3": "workspace:*",
     "lucide-react": "^0.475.0",

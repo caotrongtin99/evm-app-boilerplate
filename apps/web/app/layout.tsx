@@ -1,8 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 
-import "@workspace/ui/globals.css";
 import { Providers } from "@/components/providers";
 import { Metadata } from "next";
+
+import "@workspace/ui/globals.css";
 
 export const metadata: Metadata = {
   title: "EVM App Boilerplate",

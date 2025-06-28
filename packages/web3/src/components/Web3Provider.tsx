@@ -1,8 +1,10 @@
-import React from "react";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { WagmiProvider } from "wagmi";
 import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { wagmiConfig } from "../config/wagmi.js";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import React from "react";
+import { WagmiProvider } from "wagmi";
+import { wagmiConfig } from "../config/wagmi.ts";
+
+import "@rainbow-me/rainbowkit/styles.css";
 
 interface Web3ProviderProps {
   children: React.ReactNode;
@@ -25,5 +27,3 @@ export function Web3Provider({
     </WagmiProvider>
   );
 }
-
-export default Web3Provider;

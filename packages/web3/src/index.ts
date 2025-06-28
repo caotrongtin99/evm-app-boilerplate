@@ -12,3 +12,6 @@ export * from "./hooks";
 
 // ABI
 export * from "./abi";
+
+// Components
+export * from "./components";

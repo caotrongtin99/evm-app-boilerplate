@@ -1,5 +1,5 @@
+import { pinata } from "@/lib";
 import { NextResponse, type NextRequest } from "next/server";
-import { pinata } from "@/utils/pinata";
 
 export async function POST(request: NextRequest) {
   try {
@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
     console.log(e);
     return NextResponse.json(
       { error: "Internal Server Error" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

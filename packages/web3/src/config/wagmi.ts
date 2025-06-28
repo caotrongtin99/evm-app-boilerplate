@@ -17,7 +17,9 @@ export const createWagmiConfig = () => {
 
   return getDefaultConfig({
     appName: appInfo.appName,
-    projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID!,
+    projectId:
+      process.env.NEXT_PUBLIC_WC_PROJECT_ID! ||
+      "88e9baa7278e8ed47110cde6037c5917",
     chains: supportedChains as any,
     appDescription: appInfo.appDescription,
     appUrl: appInfo.appUrl,

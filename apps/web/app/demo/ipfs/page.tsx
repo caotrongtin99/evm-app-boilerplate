@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import Image from "next/image";
+import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 
 export default function Home() {
@@ -85,7 +86,7 @@ export default function Home() {
           <div className="text-center space-y-4">
             {preview ? (
               <div className="relative w-48 h-48 mx-auto">
-                <img
+                <Image
                   src={preview}
                   alt="Preview"
                   className="w-full h-full object-cover rounded-lg shadow-md"

@@ -1,5 +1,2 @@
-const baseConfig = require('@workspace/eslint-config/base');
-
-module.exports = {
-  ...baseConfig,
-}; 
+import { baseConfig } from "@workspace/eslint-config/base";
+export default baseConfig;

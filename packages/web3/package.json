@@ -26,11 +26,9 @@
     "typescript": "^5.7.3"
   },
   "exports": {
-    "./hooks/*": "./src/hooks/*.ts",
-    "./utils/*": "./src/utils/*.ts",
-    "./abi/*": "./src/abi/*.ts",
-    "./config/*": "./src/config/*.ts",
-    "./types/*": "./src/types/*.ts",
-    "./components/*": "./src/components/*.tsx"
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
   }
-} 
+}

@@ -23,7 +23,7 @@ This monorepo contains:
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/caotrongtin99/evm-app-boilerplate
 cd evm-dapp-boilerplate
 
 # Install dependencies
@@ -55,16 +55,19 @@ pnpm dev --filter=api    # Backend only
 ## 🔧 Tech Stack
 
 ### Frontend
+
 - **Next.js 15** with App Router
-- **React 19** 
+- **React 19**
 - **TypeScript**
 - **Tailwind CSS v4**
 - **shadcn/ui** components
 - **RainbowKit** for wallet connections
 - **Wagmi** for Ethereum interactions
+- **Viem** for blockchain interactions
 - **IPFS** integration for decentralized storage
 
 ### Backend
+
 - **NestJS** framework
 - **TypeScript**
 - **Viem** for blockchain interactions
@@ -72,9 +75,9 @@ pnpm dev --filter=api    # Backend only
 - **Security** (Helmet, CORS, Rate limiting)
 
 ### Shared Packages
+
 - **@workspace/ui**: Reusable UI components
 - **@workspace/web3**: Web3 utilities and hooks
-- **@workspace/ipfs**: IPFS utilities, hooks, and components
 - **@workspace/eslint-config**: Shared ESLint configuration
 - **@workspace/typescript-config**: Shared TypeScript configuration
 
@@ -136,13 +139,13 @@ This will place the components in `packages/ui/src/components`.
 ### UI Components
 
 ```tsx
-import { Button } from "@workspace/ui/components/button"
+import { Button } from "@workspace/ui/components/button";
 ```
 
 ### Web3 Hooks
 
 ```tsx
-import { useWalletInfo } from "@workspace/web3/hooks/useWalletInfo"
+import { useWalletInfo } from "@workspace/web3/hooks/useWalletInfo";
 ```
 
 ## 🚀 Deployment
@@ -167,6 +170,7 @@ pnpm start:prod
 See `.env.local.example` for all required environment variables.
 
 Key variables:
+
 - `NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID`: WalletConnect project ID
 - `PORT`: API server port (default: 3001)
 - `CORS_ORIGIN`: Allowed origins for CORS
